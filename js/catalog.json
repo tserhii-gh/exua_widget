@@ -1,0 +1,583 @@
+{
+	"RU" : {
+		"VIDEO" : {
+			"THREE_D"	 : {
+				"chanel" : "0",
+				"title"	 : "3D",
+				"url"	 : "/73427589"
+			},
+			"FOREIGN_FILMS" : {
+				"chanel" : "1",
+				"title"	 : "Зарубежное",
+				"url"	 : "/ru/video/foreign"
+			},
+			"OUR_FILMS"  : {
+				"chanel" : "2",
+				"title"	 : "Наше",
+				"url"	 : "/ru/video/our"
+			},
+			"FOREIGN_SERIES" : {
+				"chanel" : "3",
+				"title"	 : "Зарубежные сериалы",
+				"url"	 : "/ru/video/foreign_series"
+			},
+			"OUR_SERIES" : {
+				"chanel" : "4",
+				"title"	 : "Наши сериалы",
+				"url"	 : "/ru/video/our_series"
+			},
+			"CARTOON" : {
+				"chanel" : "5",
+				"title"	 : "Мультфильмы",
+				"url"	 : "/ru/video/cartoon"
+			},
+			"CLIP"		 : {
+				"chanel" : "6",
+				"title"	 : "Клипы",
+				"url"	 : "/ru/video/clip"
+			},
+			"CONCERT"	 : {
+				"chanel" : "7",
+				"title"	 : "Концерты",
+				"url"	 : "/ru/video/concert"
+			},
+			"SHOW"		 : {
+				"chanel" : "8",
+				"title"	 : "Шоу и Передачи",
+				"url"	 : "/ru/video/show"
+			},					
+			"DOCUMENTARY" : {
+				"chanel" : "9",
+				"title"	 : "Документальное",
+				"url"	 : "/ru/video/documentary"
+			},
+			"ANIME"		 : {
+				"chanel" : "10",
+				"title"	 : "Аниме",
+				"url"	 : "/ru/video/anime"
+			},
+			"SPORT"		 : {
+				"chanel" : "11",
+				"title"	 : "Спорт",
+				"url"	 : "/ru/video/sport"
+			},
+			"TRAINING"		 : {
+				"chanel" : "12",
+				"title"	 : "Уроки и Тренинги",
+				"url"	 : "/ru/video/training"
+			},
+			"THEATER"	 : {
+				"chanel" : "13",
+				"title"	 : "Театр",
+				"url"	 : "/ru/video/theater"
+			},
+			"SERMON"	 : {
+				"chanel" : "14",
+				"title"	 : "Проповеди",
+				"url"	 : "/ru/video/sermon"
+			},
+			"COMMERCIAL"	 : {
+				"chanel" : "15",
+				"title"	 : "Рекламные ролики",
+				"url"	 : "/ru/video/commercial"
+			},
+			"SHORT"	 : {
+				"chanel" : "16",
+				"title"	 : "Видеоролики и приколы",
+				"url"	 : "/ru/video/short"
+			},
+			"TRAILER"	 : {
+				"chanel" : "17",
+				"title"	 : "Трейлеры",
+				"url"	 : "/ru/video/trailer"
+			}
+		},
+		"AUDIO" : {
+			"SERMON"	 : {
+				"chanel" : "0",
+				"title"	 : "Проповеди/Молитвы",
+				"url"	 : "/38495531"
+			},
+			"MUSIC"		 : {
+				"chanel" : "1",
+				"title"	 : "Музыка",
+				"url"	 : "/3"
+			},
+			"AUDIOBOOK"	 : {
+				"chanel" : "2",
+				"title"	 : "Аудиокниги",
+				"url"	 : "/3454"
+			},
+			"AUDIOSTORIES"	 : {
+				"chanel" : "3",
+				"title"	 : "Аудиосказки",
+				"url"	 : "/39032910"
+			},
+			"AUDIOSHOW"	 : {
+				"chanel" : "4",
+				"title"	 : "Аудиоспектакли",
+				"url"	 : "/38494793"
+			},
+			"RADIO"		 : {
+				"chanel" : "5",
+				"title"	 : "Радио",
+				"url"	 : "/6996870"
+			},
+			"OST"		 : {
+				"chanel" : "6",
+				"title"	 : "OST",
+				"url"	 : "/71793"
+			},
+			"LESSONS"	 : {
+				"chanel" : "7",
+				"title"	 : "Уроки и Тренинги",
+				"url"	 : "/84513"
+			},
+			"FUN"	 : {
+				"chanel" : "8",
+				"title"	 : "Юмор",
+				"url"	 : "/38495711"
+			},
+			"KARAOKE"	 : {
+				"chanel" : "9",
+				"title"	 : "Караоке",
+				"url"	 : "/707499"
+			}
+		}
+	},
+	"UA" : {
+		"VIDEO" : {
+			"SPORT"		 : {
+				"chanel" : "0",
+				"title"	 : "Спорт",
+				"url"	 : "/82496"
+			},
+			"FOREIGN_FILMS" : {
+				"chanel" : "1",
+				"title"	 : "Закордонне кіно",
+				"url"	 : "/82470"
+			},
+			"OUR_FILMS"  : {
+				"chanel" : "2",
+				"title"	 : "Наше кіно",
+				"url"	 : "/82473"
+			},
+			"FOREIGN_SERIES" : {
+				"chanel" : "3",
+				"title"	 : "Серіали",
+				"url"	 : "/82480"
+			},
+			"CARTOON" : {
+				"chanel" : "4",
+				"title"	 : "Мультфільми",
+				"url"	 : "/82484"
+			},
+			"CLIP"		 : {
+				"chanel" : "5",
+				"title"	 : "Кліпи",
+				"url"	 : "/82489"
+			},
+			"CONCERT"	 : {
+				"chanel" : "6",
+				"title"	 : "Концерти",
+				"url"	 : "/82490"
+			},
+			"SHOW"		 : {
+				"chanel" : "7",
+				"title"	 : "Шоу та передачі",
+				"url"	 : "/82493"
+			},					
+			"DOCUMENTARY" : {
+				"chanel" : "8",
+				"title"	 : "Документальне",
+				"url"	 : "/82476"
+			},
+			"ANIME"		 : {
+				"chanel" : "9",
+				"title"	 : "Аніме",
+				"url"	 : "/82488"
+			},
+			"TRAINING"		 : {
+				"chanel" : "10",
+				"title"	 : "Уроки та Тренінги",
+				"url"	 : "/82495"
+			},
+			"THEATER"	 : {
+				"chanel" : "11",
+				"title"	 : "Театр",
+				"url"	 : "/82508"
+			},
+			"SERMON"	 : {
+				"chanel" : "12",
+				"title"	 : "Проповіді",
+				"url"	 : "/371167"
+			},
+			"COMMERCIAL"	 : {
+				"chanel" : "13",
+				"title"	 : "Рекламні ролики",
+				"url"	 : "/371168"
+			},
+			"SHORT"	 : {
+				"chanel" : "14",
+				"title"	 : "ExTube",
+				"url"	 : "/82499"
+			},
+			"TRAILER"	 : {
+				"chanel" : "15",
+				"title"	 : "Трейлери",
+				"url"	 : "/82483?r=80934,81708"
+			}
+		},
+		"AUDIO" : {
+			"MUSIC"		 : {
+				"chanel" : "1",
+				"title"	 : "Музика",
+				"url"	 : "/82515"
+			},
+			"AUDIOBOOK"	 : {
+				"chanel" : "2",
+				"title"	 : "Аудіокниги",
+				"url"	 : "/82521"
+			},
+			"AUDIOSTORIES"	 : {
+				"chanel" : "3",
+				"title"	 : "Аудiоказки",
+				"url"	 : "/38507143"
+			},
+			"AUDIOSHOW"	 : {
+				"chanel" : "4",
+				"title"	 : "Аудіоспектаклі",
+				"url"	 : "/38502573"
+			},
+			"OST"		 : {
+				"chanel" : "5",
+				"title"	 : "OST",
+				"url"	 : "/82518"
+			},
+			"LESSONS"	 : {
+				"chanel" : "6",
+				"title"	 : "Уроки та Тренінги",
+				"url"	 : "/84516"
+			},
+			"FUN"	 : {
+				"chanel" : "7",
+				"title"	 : "Гумор",
+				"url"	 : "/38503215"
+			},
+			"KARAOKE"	 : {
+				"chanel" : "8",
+				"title"	 : "Караоке",
+				"url"	 : "/38506848"
+			},
+			"SERMON"	 : {
+				"chanel" : "9",
+				"title"	 : "Проповіді/Молитви",
+				"url"	 : "/38503040"
+			}
+		}
+	},
+	"EN" : {
+		"VIDEO" : {
+			"SPORT"		 : {
+				"chanel" : "0",
+				"title"	 : "Sport",
+				"url"	 : "/82348"
+			},
+			"MOVIES" : {
+				"chanel" : "1",
+				"title"	 : "Movies",
+				"url"	 : "/82316"
+			},
+			"SERIES" : {
+				"chanel" : "2",
+				"title"	 : "Series",
+				"url"	 : "/82325"
+			},
+			"CARTOON" : {
+				"chanel" : "3",
+				"title"	 : "Cartoons",
+				"url"	 : "/82329"
+			},
+			"CLIP"		 : {
+				"chanel" : "4",
+				"title"	 : "Clips",
+				"url"	 : "/82333"
+			},
+			"CONCERT"	 : {
+				"chanel" : "5",
+				"title"	 : "Live Concerts",
+				"url"	 : "/82335"
+			},
+			"SHOW"		 : {
+				"chanel" : "6",
+				"title"	 : "Shows & Live",
+				"url"	 : "/82339"
+			},					
+			"DOCUMENTARY" : {
+				"chanel" : "7",
+				"title"	 : "Documentaries",
+				"url"	 : "/82318"
+			},
+			"ANIME"		 : {
+				"chanel" : "8",
+				"title"	 : "Anime",
+				"url"	 : "/82331"
+			},
+			"TRAINING"		 : {
+				"chanel" : "9",
+				"title"	 : "Lessons & Trainings",
+				"url"	 : "/82343"
+			},
+			"THEATER"	 : {
+				"chanel" : "10",
+				"title"	 : "Theatre & Musicals",
+				"url"	 : "/82354"
+			},
+			"SERMON"	 : {
+				"chanel" : "11",
+				"title"	 : "Sermon",
+				"url"	 : "/371177"
+			},
+			"COMMERCIAL"	 : {
+				"chanel" : "12",
+				"title"	 : "Commercials",
+				"url"	 : "/371172"
+			},
+			"SHORT"	 : {
+				"chanel" : "13",
+				"title"	 : "ExTube",
+				"url"	 : "/82350"
+			},
+			"TRAILER"	 : {
+				"chanel" : "14",
+				"title"	 : "Trailers",
+				"url"	 : "/82326?r=80925,81708"
+			}
+		},
+		"AUDIO" : {
+			"MUSIC"		 : {
+				"chanel" : "1",
+				"title"	 : "Music",
+				"url"	 : "/82379"
+			},
+			"AUDIOBOOK"	 : {
+				"chanel" : "2",
+				"title"	 : "Audio Books",
+				"url"	 : "/82381"
+			},
+			"OST"		 : {
+				"chanel" : "3",
+				"title"	 : "OST",
+				"url"	 : "/82380"
+			},
+			"LESSONS"	 : {
+				"chanel" : "4",
+				"title"	 : "Lessons & Trainings",
+				"url"	 : "/84518"
+			}
+		}
+	},
+	"DE" : {
+		"VIDEO" : {
+			"SPORT"		 : {
+				"chanel" : "0",
+				"title"	 : "Sport",
+				"url"	 : "/82420"
+			},
+			"MOVIES" : {
+				"chanel" : "1",
+				"title"	 : "Kino",
+				"url"	 : "/45234"
+			},
+			"SERIES" : {
+				"chanel" : "2",
+				"title"	 : "Serie",
+				"url"	 : "/45252"
+			},
+			"CARTOON" : {
+				"chanel" : "3",
+				"title"	 : "Cartoons",
+				"url"	 : "/45253"
+			},
+			"CLIP"		 : {
+				"chanel" : "4",
+				"title"	 : "Clips",
+				"url"	 : "/45256"
+			},
+			"CONCERT"	 : {
+				"chanel" : "5",
+				"title"	 : "Konzerte",
+				"url"	 : "/82498"
+			},
+			"SHOW"		 : {
+				"chanel" : "6",
+				"title"	 : "Shows und Programme",
+				"url"	 : "/82500"
+			},					
+			"DOCUMENTARY" : {
+				"chanel" : "7",
+				"title"	 : "Dokumentarfilm",
+				"url"	 : "/45246"
+			},
+			"ANIME"		 : {
+				"chanel" : "8",
+				"title"	 : "Anime",
+				"url"	 : "/45254"
+			},
+			"TRAINING"		 : {
+				"chanel" : "9",
+				"title"	 : "Unterricht & Training",
+				"url"	 : "/45259"
+			},
+			"THEATER"	 : {
+				"chanel" : "10",
+				"title"	 : "Theater",
+				"url"	 : "/82512"
+			}
+		},
+		"AUDIO" : {
+			"MUSIC"		 : {
+				"chanel" : "1",
+				"title"	 : "Musik",
+				"url"	 : "/45261"
+			},
+			"AUDIOBOOK"	 : {
+				"chanel" : "2",
+				"title"	 : "Audio Bücher",
+				"url"	 : "/45262"
+			},
+			"OST"		 : {
+				"chanel" : "3",
+				"title"	 : "OST",
+				"url"	 : "/82571"
+			},
+			"LESSONS"	 : {
+				"chanel" : "4",
+				"title"	 : "Unterricht & Training",
+				"url"	 : "/84520"
+			}
+		}
+	},
+	"ES" : {
+		"VIDEO" : {
+			"SPORT"		 : {
+				"chanel" : "0",
+				"title"	 : "Deporte",
+				"url"	 : "/188035"
+			},
+			"MOVIES" : {
+				"chanel" : "1",
+				"title"	 : "Películas",
+				"url"	 : "/188000"
+			},
+			"SERIES" : {
+				"chanel" : "2",
+				"title"	 : "Seriales",
+				"url"	 : "/188005"
+			},
+			"CARTOON" : {
+				"chanel" : "3",
+				"title"	 : "Dibujos animados",
+				"url"	 : "/188009"
+			},
+			"CLIP"		 : {
+				"chanel" : "4",
+				"title"	 : "Clips",
+				"url"	 : "/188015"
+			},
+			"CONCERT"	 : {
+				"chanel" : "5",
+				"title"	 : "Conciertos",
+				"url"	 : "/188018"
+			},
+			"SHOW"		 : {
+				"chanel" : "6",
+				"title"	 : "Espectáculos y Programas de TV",
+				"url"	 : "/188029"
+			},					
+			"DOCUMENTARY" : {
+				"chanel" : "7",
+				"title"	 : "Documentales",
+				"url"	 : "/188001"
+			},
+			"ANIME"		 : {
+				"chanel" : "8",
+				"title"	 : "Anime",
+				"url"	 : "/188012"
+			},
+			"TRAINING"		 : {
+				"chanel" : "9",
+				"title"	 : "Lecciones y Formación",
+				"url"	 : "/188034"
+			},
+			"THEATER"	 : {
+				"chanel" : "10",
+				"title"	 : "Teatro",
+				"url"	 : "/188038"
+			}
+		},
+		"AUDIO" : {
+			"MUSIC"		 : {
+				"chanel" : "1",
+				"title"	 : "Música",
+				"url"	 : "/188039"
+			},
+			"AUDIOBOOK"	 : {
+				"chanel" : "2",
+				"title"	 : "Audiolibros",
+				"url"	 : "/188041"
+			},
+			"OST"		 : {
+				"chanel" : "3",
+				"title"	 : "OST",
+				"url"	 : "/188040"
+			},
+			"LESSONS"	 : {
+				"chanel" : "4",
+				"title"	 : "Lecciones y Formación",
+				"url"	 : "/188043"
+			}
+		}
+	},
+	"PL" : {
+		"VIDEO" : {
+			"MOVIES" : {
+				"chanel" : "1",
+				"title"	 : "Filmy polskie",
+				"url"	 : "/969014"
+			},
+			"FOREIGN_FILMS" : {
+				"chanel" : "2",
+				"title"	 : "Filmy zachodnie",
+				"url"	 : "/969016"
+			},
+			"CARTOON" : {
+				"chanel" : "3",
+				"title"	 : "Filmy animowane",
+				"url"	 : "/969022"
+			},
+			"ANIME"		 : {
+				"chanel" : "4",
+				"title"	 : "Anime/Manga",
+				"url"	 : "/969023"
+			}
+		},
+		"AUDIO" : {
+			"MUSIC"		 : {
+				"chanel" : "1",
+				"title"	 : "Muzyka",
+				"url"	 : "/968998"
+			},
+			"AUDIOBOOK"	 : {
+				"chanel" : "2",
+				"title"	 : "Audiobooki",
+				"url"	 : "/969004"
+			},
+			"OST"		 : {
+				"chanel" : "3",
+				"title"	 : "OST",
+				"url"	 : "/969002"
+			}
+		}
+	}
+}
