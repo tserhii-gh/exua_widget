@@ -269,14 +269,7 @@ Display.setTime = function(time)
 	//Время окончания просмотра----------
 	timeToMs = currentLocalTimeArr[0] * 3600 * 1000; //hours
 	timeToMs += currentLocalTimeArr[1] * 60 * 1000; //minutes
-	if (timeHour == 0 || timeMinute == 0){
-		msToTime = timeToMs + this.totalTime;
-	}
-	else
-		{
-		
-		msToTime = timeToMs + this.totalTime - time;
-	}
+	msToTime = timeToMs + this.totalTime - time;
 	finishMinutes = parseInt((msToTime/(1000*60))%60);
 	finishHours = parseInt((msToTime/(1000*60*60))%24);
 	finishHours = (finishHours < 10) ? "0" + finishHours : finishHours;
