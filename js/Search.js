@@ -1,7 +1,7 @@
 var Search = {
 	
 };
-
+var scat = ''; //поиск в текущей категории
 var ime = ''; // обьект - виртуальная клав.
 var rezylt = ''; // текст результат
 
@@ -43,7 +43,25 @@ Search.onEnter = function(string) {
 		$("#menu").append('<li id="menu_2"><span>«'+string+'»</span></li>');
 
 		URLtoXML.xmlHTTP = null;
-		Main.sURL = Main.prefixURL+"/search?s=" + string;
+		//Main.sURL = Main.prefixURL+"/search?" +  + "s=" + string;
+		//Наши сериалы "original_id=422546&"
+		//Наше "original_id=70538&"
+		//""
+		//""
+		//""
+		alert("###### >> " + EX_Category_URL[Main.mnCurrentCategory]);
+		if (Main.mnCurrentCategory > 0){
+			if (EX_Category_URL[Main.mnCurrentCategory] == "/ru/video/our_series"){
+				scat = "original_id=422546&";
+					}
+				else if (EX_Category_URL[Main.mnCurrentCategory] == "/ru/video/our"){
+					scat = "original_id=70538&";
+				} 
+				else {
+					scat = '';
+				}
+		}
+		Main.sURL = Main.prefixURL+"/search?" + scat + "s=" + string;
 		alert(Main.sURL);
 		URLtoXML.Proceed(Main.sURL);
 

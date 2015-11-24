@@ -8,7 +8,7 @@ Info.open = function() {
 	this.isVisible = true;
 	
 	// set widget version
-	$("#date").attr('id','widget_ver').html("Model:"+Main.hardware+"   Type:"+Main.hardware_char+"   v."+Main.version);
+	$("#date").attr('id','widget_ver').html("v."+Main.version); //"Model:"+Main.hardware+"   Type:"+Main.hardware_char+
 	
 	if($("#time").length == 0){
 		$("#top").append('<div id="time" />');

@@ -195,7 +195,7 @@ Display.setTotalTime = function(total)
 Display.setTime = function(time)
 {
 	var timePercent =(100 * time) / this.totalTime;
-	var Barwidth = Math.floor(timePercent*6.4);
+	var Barwidth = Math.floor(timePercent*5);
 	var timeHTML = "";
 	var timeHour = 0;
 	var timeMinute = 0;

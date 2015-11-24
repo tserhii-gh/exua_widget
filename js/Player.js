@@ -39,7 +39,7 @@ var Player = {
 	support3DMode : false, // поддерживается ли 3D режим
 	change3DMode : false, // этот флаг нужен что бы определить изменялся ли режим 3D для корректного выхода из него
 	arrSaveLastPlayed : [ // перечень разделов, где запоминается последний открытый файл
-//		EX_Category.SOAP_OPERAS,
+"/ru/video/our_series",
 //		EX_Category.THE_ANIMATED_SERIES,
 //		EX_Category.TV_SHOWS,
 //		EX_Category.COLLECTIONS,
@@ -251,9 +251,10 @@ Player.playVideo = function() // играть
 	}
 	
 	for(var i = 0; i < Player.arrSaveLastPlayed.length; i++) {
-		if (URLtoXML.selectedCatalog.indexOf(EX_Category_URL[Player.arrSaveLastPlayed[i]])>-1) {
+		//if (URLtoXML.selectedCatalog.indexOf(EX_Category_URL[Player.arrSaveLastPlayed[i]])>-1) {
+			//alert(">>>>>>>> " + URLtoXML.selectedCatalog.indexOf(EX_Category_URL[Player.arrSaveLastPlayed[i]]));
 			Player.saveLastPlayedFile();
-		}
+		//}
 	}
 };
 

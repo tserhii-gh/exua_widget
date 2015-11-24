@@ -65,14 +65,14 @@
 	width: 250px;
 	padding: 12px 20px 10px 20px;
 	text-align: center;
-	background: rgba(40, 46, 61, 0.9);
+	background: rgba(0, 0, 0, 0.9);
 	border: 1px solid #222;
 	border-radius: 3px;
-	box-shadow: inset 0px 200px 0px rgba(255,255,255,0.1),
+	/*box-shadow: inset 0px 200px 0px rgba(255,255,255,0.1),
     inset 0 1px 0 rgba(255,255,255,0.3),
     inset 0 5px 5px rgba(255,255,255,0.1),
     inset 0 -5px 10px rgba(0,0,0,0.1),
-    0 3px 3px rgba(0,0,0,0.3);
+    0 3px 3px rgba(0,0,0,0.3);*/
 	
 	z-index: 999;
 }
@@ -787,9 +787,9 @@ label.selected {
 #progressBarBG
 {
 	position: absolute;
-	left: 90px; 
+	left: 230px; 
 	top: 11px;
-	width: 640px; 
+	width: 500px; 
 	height: 15px;
 	overflow: hidden;
 	background-image: url("../img/progressBarBG.png");
@@ -798,7 +798,7 @@ label.selected {
 #progressBar
 {
 	position: absolute;
-	left: 90px; 
+	left: 230px; 
 	top: 11px;
 	width: 0px; 
 	height: 15px;
@@ -1074,14 +1074,14 @@ border-radius: 4px 4px 4px 4px;
 	font-size: 16px;
 	padding: 20px;
 	color: white;
-	background: rgba(40, 46, 61, 0.75);
-	border: 1px solid #222;
+	background: rgba(0, 0, 0, 0.75);
+	border: 1px solid #000;
 	border-radius: 4px;
-	box-shadow: inset 0px 200px 0px rgba(255,255,255,0.15),
+	/*box-shadow: inset 0px 200px 0px rgba(255,255,255,0.15),
     inset 1px 1px 0 rgba(255,255,255,0.3),
     inset -1px -1px 0 rgba(255,255,255,0.2),
     inset 0 5px 10px rgba(255,255,255,0.15),
-    inset 0 -5px 10px rgba(0,0,0,0.1);
+    inset 0 -5px 10px rgba(0,0,0,0.1);*/
 	z-index: 999;
 }
 
@@ -1125,7 +1125,7 @@ border-radius: 4px 4px 4px 4px;
 }
 
 #confirmBox > div span.selected {
-	background-color: #66CC00;
+	background-color: #ff8605;
 }
 
 .helpLineButton {

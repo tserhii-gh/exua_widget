@@ -20,11 +20,11 @@ var EX_MaterialType = {
 };
 
 // Устанавливаем значение по умолчанию. Остальные будут подгружены с помощью AJAX
-var EX_Category = {"FOREIGN_FILMS" : '1'};
+var EX_Category = {"OUR_SERIES" : '1'};
 var EX_CategoryWords = [];
-	EX_CategoryWords[1] = "Зарубежное";
+	EX_CategoryWords[1] = "Наши сериалы";
 var EX_Category_URL = [];
-	EX_Category_URL[1] = "/ru/video/foreign";
+	EX_Category_URL[1] = "/ru/video/our_series";
 
 var EX_Sort = ["новое в начале", "новое в конце"];
 
@@ -71,7 +71,7 @@ var Main = {
 	keybMode : false,
 	defaultKeybMode : '12key', // '12key' или 'qwerty' режим для стандартной клавиатуры
 	customKeyb : true, // true - новая QWERTY клавиатура, false - стандартная
-	fromLastPlayed : false, // продолжать воспроизведение с последнего открытого файла: true - да, false - нет
+	fromLastPlayed : true, // продолжать воспроизведение с последнего открытого файла: true - да, false - нет
 	clockOffset : 0, // смещение часового пояса
 	
 	player : 'standart', // standart, sef
@@ -84,7 +84,7 @@ var Main = {
 	lang : 'RU',
 	materialType : 'VIDEO',
 	
-	debugMode: false, // включаем отображение отладочной информации
+	debugMode: true, // включаем отображение отладочной информации
 	debugSection: new Array("All"), // используется для отображения отладочной информации в определенных разделах. All или "" - для отображения во всех разделах.
 };
 
@@ -1359,10 +1359,10 @@ Main.setCategory = function()
 Main.setMenu = function() 
 {
 	Main.topMenu = {};
-	Main.topMenu['lang'] = EX_Langs;
+	//Main.topMenu['lang'] = EX_Langs;
 	Main.topMenu['materialType'] = EX_MaterialType;
 	Main.topMenu['category'] = EX_CategoryWords;
-	Main.topMenu['sort'] = EX_Sort;
+	//Main.topMenu['sort'] = EX_Sort;
 	Main.showTopMenu(Main.topMenu);
 }
 

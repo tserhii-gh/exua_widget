@@ -424,13 +424,13 @@ URLtoXML.ParseXMLData = function() {
 			Main.handleActiv();
 			
 			// Диалоговое окно "Продолжить с последнего открытого файла"
-//			this.selectedCatalog = this.xmlHTTP.url;
-//			for(var i = 0; i < Player.data['lastPlayed'].length; i++) {
-//				if (Player.data['lastPlayed'][i].cat==this.xmlHTTP.url) {
-//					Player.lastPlayedUrl = Player.data['lastPlayed'][i].url;
-//					Display.showLastPlayed(Player.data['lastPlayed'][i].name);
-//				}
-//			}
+			this.selectedCatalog = this.xmlHTTP.url;
+			for(var i = 0; i < Player.data['lastPlayed'].length; i++) {
+				if (Player.data['lastPlayed'][i].cat==this.xmlHTTP.url) {
+					Player.lastPlayedUrl = Player.data['lastPlayed'][i].url;
+					Display.showLastPlayed(Player.data['lastPlayed'][i].name);
+				}
+			}
 		}
 		
 		sOut = null;
