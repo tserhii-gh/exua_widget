@@ -110,10 +110,10 @@ Settings.onLoad = function() {
 		}
 		
 		var helpLine = $("#help_line .info_block");
-		helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/images/buttons/red.png" /> - Сохранить настройки</div>');
-		helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/images/buttons/move.png" /> - Навигация</div>');
-		helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/images/buttons/enter.png" /> - Выбор</div>');
-		helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/images/buttons/back.png" /> - Выйти из настроек</div>');
+		helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/img/buttons/red.png" /> - Сохранить настройки</div>');
+		helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/img/buttons/move.png" /> - Навигация</div>');
+		helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/img/buttons/enter.png" /> - Выбор</div>');
+		helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/img/buttons/back.png" /> - Выйти из настроек</div>');
 
 		$("#main").show();
 		$("#anchor").focus(); // Помещение фокуса на элемент "anchor"
@@ -329,7 +329,7 @@ Settings.getVersion = function() {
 			var myRe = new RegExp("<ver>(.*)</ver>","igm");
 			if (ver = myRe.exec(xml)){
 				Settings.version = ver[1];
-				widgetPath = 'http://wiget.pp.ua/ex_server/'+Settings.version.replace(/\./g,'_');
+				widgetPath = 'http://tuxbox:8000';
 				alert("Widget version: "+Settings.version);
 			}
 		}

@@ -373,7 +373,7 @@
 }
 
 label.selected {
-	color: #99FF00 !important;
+	color: #ff8605 !important;
 }
 
 .text{
@@ -451,17 +451,17 @@ label.selected {
 	height: 436px;
 	font-size: 16px;
 	overflow: hidden;
-	background-color: rgba(153,204,255,0.1);
-	box-shadow: inset 0 0 5px 1px rgba(153,204,255,0.45);
+	background-color: #353535;
+	box-shadow: 0 0 5px 1px rgba(0,0,0,0.45);
 	/*border: 1px solid #4e657a;*/
-	border-radius: 10px;
+	border-radius: 0px;
 }
 
-/* hack for C,D series */
+/* hack for C,D series 
 #descript, x:-moz-any-link {
 	height: 430px;
 	border: 3px solid #8592af;
-}
+}*/
 
 #description {
 	position: relative;
@@ -471,10 +471,10 @@ label.selected {
 	overflow: hidden;
 }
 
-/* hack for C,D series */
+/* hack for C,D series 
 #description, x:-moz-any-link {
 	height: 420px;
-}
+}*/
 
 #description a {
 	text-decoration: none;
@@ -583,7 +583,7 @@ label.selected {
 }
 
 #menu li.active span {
-	color: #99FF00;
+	color: #ff8605;
 }
 
 /* hack for C,D series */
@@ -615,12 +615,14 @@ label.selected {
 	text-align: center;
 	margin: 20px 0 0 35px;
 	overflow: hidden;
-	background-color: #000;
+	background-color: black;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
 	border: 4px solid #000;
+	box-shadow: inset 0px 0px 10px 5px rgba(0,0,0,1.0);
 	border-radius: 4px;
+	/**/
 }
 
 #spisok2.resmore .block {
@@ -646,10 +648,22 @@ label.selected {
 }
 
 .blockImage {
-	max-height: 95%;
-	max-width: 95%;
+	max-height: 85%;
+	max-width: 85%;
 	vertical-align: middle;
 	margin-top: -4px;
+	/* Inner shadow*/
+	border-radius: 4px;
+	isplay: inline-block;
+  	-webkit-border-radius: 4px;
+  	-moz-border-radius: 4px;
+  	-moz-box-shadow: rgba(0, 0, 0, 0.9) 3px 3px 15px inset;
+  	-webkit-box-shadow: rgba(0, 0, 0, 0.9) 3px 3px 15px inset;
+  	box-shadow: rgba(0, 0, 0, 0.9) 3px 3px 15px inset;
+  	-webkit-transition: box-shadow 0.2s ease-in;
+  	-moz-transition: box-shadow 0.2s ease-in;
+  	transition: box-shadow 0.2s ease-in;
+  	/*---*/
 }
 
 /* hack for C,D series */
@@ -672,7 +686,8 @@ label.selected {
 	left:0px;
     width: 960px; 
 	height:60px;		
-	background-image: url("../img/player.png");
+	/*background-image: url("../img/player.png");*/
+	background-color: #000;
 	z-index: 99;
 }
 
@@ -681,7 +696,8 @@ label.selected {
 	top: -480px;
 	height: 40px;
 	width: 100%;
-	background: transparent url("../img/player_top.png") 0 100% no-repeat;
+	/*background: transparent url("../img/player_top.png") 0 100% no-repeat;*/
+	background-color: #000;
 	text-shadow: -1px -1px 0 #000,
     1px -1px 0 #000,
     -1px 1px 0 #000,
@@ -720,6 +736,20 @@ label.selected {
 	font-size: 16px;
 	color : #FFFFFF;
 	background: transparent url("../img/time.png") 0 0 no-repeat;
+}
+
+#finishTime {
+	position: absolute;
+	right: 10px; 
+	top: 10px;
+	width: 50px;
+	text-align:right;
+	font-size:16px; 
+	color: red;
+	text-shadow: -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000
 }
 
 #player .p_second_line {
@@ -793,7 +823,7 @@ label.selected {
 .selected .link-subtype, 
 .selected .link-subtype b,
 .selected .link-subtype span {
-	color: #99FF00 !important;
+	color: #ff8605 !important;
 }
 
 .link-subtype {
@@ -851,7 +881,7 @@ label.selected {
 }
 
 #description b {
-	color: #99FF00;
+	color: #ff8605;
 	font-weight: normal;
 }
 
@@ -872,7 +902,7 @@ label.selected {
 }
 
 #description TABLE A SPAN{
-	color: #99FF00;
+	color: #ff8605;
 }
 
 #description .votes{
@@ -905,11 +935,11 @@ label.selected {
     position: absolute;
     top: 65px;
     left: 545px;
-    border-radius: 19px;
+    border-radius: 4px;
     background-color: rgba(0,0,0,0.92);
     width: 410px;
     height: 440px;
-    background-image: url("../img/desc.png");
+    /*background-image: url("../img/desc.png");*/
 }
 
 .info_title {
@@ -959,7 +989,7 @@ z-index: 98;
 }
 
 #new b {
-	color: #99FF00;
+	color: #ff8605;
 	font-size: 20px;
 	text-shadow: none;
 }

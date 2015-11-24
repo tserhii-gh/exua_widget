@@ -15,7 +15,7 @@ Info.open = function() {
 	}
 	
 	Info.load();
-	Info.include();
+	//Info.include();
 	Info.setClock();
 };
 
@@ -43,89 +43,89 @@ Info.load = function()
 	
 	if (Main.playlist == 0) {
 		if (Favorites.isVisible){
-			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/images/buttons/yellow.png" /> - Удалить из избранного</div>');
-			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/images/buttons/tools.png" /><img src="'+widgetPath+'/images/buttons/guide.png" /> - Поиск</div>');
-			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/images/buttons/back.png" /> - Назад</div>');
-			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/images/buttons/exit.png" /> - Выход</div>');
+			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/img/buttons/yellow.png" /> - Удалить из избранного</div>');
+			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/img/buttons/tools.png" /><img src="'+widgetPath+'/img/buttons/guide.png" /> - Поиск</div>');
+			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/img/buttons/back.png" /> - Назад</div>');
+			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/img/buttons/exit.png" /> - Выход</div>');
 		}
 		else if (Main.keybMode) {
-			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/images/buttons/red.png" /> - Язык</div>');
-			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/images/buttons/green.png" /> - Caps</div>');
-			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/images/buttons/yellow.png" /> - Backspace</div>');
-			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/images/buttons/blue.png" /> - Очистить</div>');
-			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/images/buttons/move.png" /> - Навигация</div>');
-			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/images/buttons/tools.png" /><img src="'+widgetPath+'/images/buttons/guide.png" /> - Поиск</div>');
-			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/images/buttons/enter.png" /> - Выбор</div>');
+			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/img/buttons/red.png" /> - Язык</div>');
+			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/img/buttons/green.png" /> - Caps</div>');
+			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/img/buttons/yellow.png" /> - Backspace</div>');
+			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/img/buttons/blue.png" /> - Очистить</div>');
+			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/img/buttons/move.png" /> - Навигация</div>');
+			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/img/buttons/tools.png" /><img src="'+widgetPath+'/img/buttons/guide.png" /> - Поиск</div>');
+			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/img/buttons/enter.png" /> - Выбор</div>');
 			$('#chlist_search').hide();
 		} 
 		else if (Main.search) {
-			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/images/buttons/red.png" /> - Избранное</div>');
-			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/images/buttons/yellow.png" /> - Доб. в избранное</div>');
-			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/images/buttons/move.png" /> - Навигация</div>');
-			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/images/buttons/0_9.png" /><img src="'+widgetPath+'/images/buttons/chanel.png" /> - Категория</div>');
-			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/images/buttons/tools.png" /><img src="'+widgetPath+'/images/buttons/guide.png" /> - Поиск</div>');
-			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/images/buttons/exit.png" /> - Выход</div>');
+			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/img/buttons/red.png" /> - Избранное</div>');
+			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/img/buttons/yellow.png" /> - Доб. в избранное</div>');
+			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/img/buttons/move.png" /> - Навигация</div>');
+			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/img/buttons/0_9.png" /><img src="'+widgetPath+'/img/buttons/chanel.png" /> - Категория</div>');
+			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/img/buttons/tools.png" /><img src="'+widgetPath+'/img/buttons/guide.png" /> - Поиск</div>');
+			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/img/buttons/exit.png" /> - Выход</div>');
 		}
 		else if (Main.menu) {
-			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/images/buttons/lr.png" /> - Навигация</div>');
-			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/images/buttons/ud.png" /> - Выбор</div>');
-			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/images/buttons/0_9.png" /><img src="'+widgetPath+'/images/buttons/chanel.png" /> - Категория</div>');
-			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/images/buttons/back.png" /> - Выйти из меню</div>');
-			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/images/buttons/exit.png" /> - Выход</div>');
+			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/img/buttons/lr.png" /> - Навигация</div>');
+			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/img/buttons/ud.png" /> - Выбор</div>');
+			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/img/buttons/0_9.png" /><img src="'+widgetPath+'/img/buttons/chanel.png" /> - Категория</div>');
+			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/img/buttons/back.png" /> - Выйти из меню</div>');
+			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/img/buttons/exit.png" /> - Выход</div>');
 		}
 		else {
-			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/images/buttons/red.png" /> - Избранное</div>');
-			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/images/buttons/yellow.png" /> - Доб. в избранное</div>');
-			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/images/buttons/blue.png" /> - Меню</div>');
-			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/images/buttons/0_9.png" /><img src="'+widgetPath+'/images/buttons/chanel.png" /> - Категория</div>');
-			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/images/buttons/tools.png" /><img src="'+widgetPath+'/images/buttons/guide.png" /> - Поиск</div>');
-			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/images/buttons/info.png" /> - Настройки</div>');
-			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/images/buttons/exit.png" /> - Выход</div>');
+			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/img/buttons/red.png" /> - Избранное</div>');
+			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/img/buttons/yellow.png" /> - Доб. в избранное</div>');
+			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/img/buttons/blue.png" /> - Меню</div>');
+			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/img/buttons/0_9.png" /><img src="'+widgetPath+'/img/buttons/chanel.png" /> - Категория</div>');
+			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/img/buttons/tools.png" /><img src="'+widgetPath+'/img/buttons/guide.png" /> - Поиск</div>');
+			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/img/buttons/info.png" /> - Настройки</div>');
+			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/img/buttons/exit.png" /> - Выход</div>');
 		}
 	}
 	
 	if (Main.playlist == 1) {
 		if(Display.fullDescVisible){
-			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/images/buttons/yellow.png" /> - Доб. в избранное</div>');
-			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/images/buttons/ud.png" /> - Листать текст</div>');
-			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/images/buttons/back.png" /> - Скрыть полное описание</div>');
+			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/img/buttons/yellow.png" /> - Доб. в избранное</div>');
+			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/img/buttons/ud.png" /> - Листать текст</div>');
+			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/img/buttons/back.png" /> - Скрыть полное описание</div>');
 		} else {
-			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/images/buttons/yellow.png" /> - Доб. в избранное</div>');
-			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/images/buttons/ud.png" /> - Навигация</div>');
-			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/images/buttons/enter.png" /> - Выбор</div>');
-			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/images/buttons/info.png" /> - Полное описание</div>');
-			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/images/buttons/back.png" /> - Назад</div>');
-			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/images/buttons/exit.png" /> - Выход</div>');
+			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/img/buttons/yellow.png" /> - Доб. в избранное</div>');
+			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/img/buttons/ud.png" /> - Навигация</div>');
+			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/img/buttons/enter.png" /> - Выбор</div>');
+			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/img/buttons/info.png" /> - Полное описание</div>');
+			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/img/buttons/back.png" /> - Назад</div>');
+			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/img/buttons/exit.png" /> - Выход</div>');
 		}
 	}
 	
 	if (Main.playlist == 2) {
 		if(Display.fullDescVisible){
-			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/images/buttons/yellow.png" /> - Доб. в избранное</div>');
-			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/images/buttons/ud.png" /> - Листать текст</div>');
-			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/images/buttons/back.png" /><img src="'+widgetPath+'/images/buttons/info.png" /> - Скрыть полное описание</div>');
+			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/img/buttons/yellow.png" /> - Доб. в избранное</div>');
+			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/img/buttons/ud.png" /> - Листать текст</div>');
+			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/img/buttons/back.png" /><img src="'+widgetPath+'/img/buttons/info.png" /> - Скрыть полное описание</div>');
 		} else {
 			if (Main.video == 'original'){
-				helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/images/buttons/red.png" /> - Web версия</div>');
+				helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/img/buttons/red.png" /> - Web версия</div>');
 			}
 			
-			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/images/buttons/yellow.png" /> - Доб. в избранное</div>');
-			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/images/buttons/ud.png" /> - Навигация</div>');
+			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/img/buttons/yellow.png" /> - Доб. в избранное</div>');
+			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/img/buttons/ud.png" /> - Навигация</div>');
 			
 			if (Main.video == 'original'){
-				helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/images/buttons/enter.png" /> - Оригинальная версия</div>');
+				helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/img/buttons/enter.png" /> - Оригинальная версия</div>');
 			} else {
-				helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/images/buttons/enter.png" /> - Просмотр</div>');
+				helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/img/buttons/enter.png" /> - Просмотр</div>');
 			}
 			
-			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/images/buttons/info.png" /> - Полное описание</div>');
-			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/images/buttons/back.png" /> - Назад</div>');
-			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/images/buttons/exit.png" /> - Выход</div>');
+			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/img/buttons/info.png" /> - Полное описание</div>');
+			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/img/buttons/back.png" /> - Назад</div>');
+			helpLine.append('<div class="helpLineButton"><img src="'+widgetPath+'/img/buttons/exit.png" /> - Выход</div>');
 		}
 	}
 };
 
-Info.include = function() {
+/*Info.include = function() {
 	this.news = true;
 	var html_doc = document.getElementsByTagName('head').item(0);
 	var js = document.createElement('script');
@@ -136,7 +136,7 @@ Info.include = function() {
 	html_doc.appendChild(js);
 	alert ("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! DONE !!!!!!!!!!!!!!!!!!!!!!!!");
 	return false;
-};
+};*/
  
 /* TIME / CLOCK */
 Info.setClock = function () {

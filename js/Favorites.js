@@ -68,7 +68,8 @@ Favorites.showItems = function() {
 			}
 			
 			$("#spisok2").append('<div id="bloc' + (i+1-Main.page*Main.perPage) + '" class="block"></div>');
-			$("#bloc" + (i+1-Main.page*Main.perPage)).html("<span><img class='blockImage' id='imgst" + (i+1-Main.page*Main.perPage) +  "'  src='" + URLtoXML.ImgDickr[i+1-Main.page*Main.perPage] + "' /></span>");
+			$("#bloc" + (i+1-Main.page*Main.perPage)).html("<span class='blockImage' id='imgst" + (i+1-Main.page*Main.perPage) +  "></span>");
+			$("#bloc" + (i+1-Main.page*Main.perPage)).css('background-image', 'url("' + URLtoXML.ImgDickr[i+1-Main.page*Main.perPage] + '")');
 			$("#bloc" + Main.index).addClass('selected'); // активный элемент
 		}
 	}

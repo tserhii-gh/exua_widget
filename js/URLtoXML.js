@@ -191,7 +191,7 @@ URLtoXML.ParseXMLData = function() {
 								if(match = myRe.exec(arr[i])){
 									URLtoXML.ImgDickr[index] = match[1].replace(/\?[0-9]+/,"?200");
 								} else {
-									URLtoXML.ImgDickr[index] = widgetPath+'/images/logo.png';
+									URLtoXML.ImgDickr[index] = widgetPath+'/img/logo.png';
 								}
 								
 								// get title
@@ -204,7 +204,11 @@ URLtoXML.ParseXMLData = function() {
 								
 								$("#title").html(URLtoXML.sName[Main.index]);
 								$("#spisok2").append('<div id="bloc' + index + '" class="block"></div>');
-								$("#bloc" + index).html("<span><img class='blockImage' id='imgst" + index +  "' src='" + URLtoXML.ImgDickr[index] + "'/></span>");
+								$("#bloc" + index).html("<span class='blockImage' id='imgst" + index + "></span>");
+								$("#bloc" + index).css('background-image', 'url("' + URLtoXML.ImgDickr[index] + '")');
+								//Poster shadow test
+								//$("#bloc" + index).html("<span><img class='blockImage' id='imgst" + index +  "'/></span>");
+								//document.getElementById("imgst" + index).style.backgroundImage = URLtoXML.ImgDickr[index];
 							}
 						}
 						
@@ -240,7 +244,7 @@ URLtoXML.ParseXMLData = function() {
 								if(match = myRe.exec(arr[i])){
 									URLtoXML.ImgDickr[index] = match[1].replace(/\?[0-9]+/,"?200");
 								} else {
-									URLtoXML.ImgDickr[index] = widgetPath+'/images/logo.png';
+									URLtoXML.ImgDickr[index] = widgetPath+'/img/logo.png';
 								}
 
 								// get title
@@ -253,7 +257,13 @@ URLtoXML.ParseXMLData = function() {
 
 								$("#title").html(URLtoXML.sName[Main.index]);
 								$("#spisok2").append('<div id="bloc' + index + '" class="block"></div>');
-								$("#bloc" + index).html("<span><img class='blockImage' id='imgst" + index +  "' src='" + URLtoXML.ImgDickr[index] + "'/></span>");
+								$("#bloc" + index).html("<span class='blockImage' id='imgst" + index +  "></span>");
+								//$("#bloc" + index).html("<span><img class='blockImage' id='imgst" + index +  "' src='" + URLtoXML.ImgDickr[index] + "'/></span>");
+								//$("#bloc" + index).html("<span></span>");
+								$("#bloc" + index).css('background-image', 'url("' + URLtoXML.ImgDickr[index] + '")');
+								//Poster shadow test
+								//$("#bloc" + index).html("<span class='blockImage' id='imgst" + index +  "' style='background: url('" + URLtoXML.ImgDickr[index] + "')''></span>");
+								//document.getElementById("imgst" + index).style.backgroundImage = "url('" + URLtoXML.ImgDickr[index] + "')";
 							} 
 							else if(arr[i].indexOf('Нет доступа к объекту') > -1) 
 							{

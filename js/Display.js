@@ -142,19 +142,19 @@ Display.showplayer = function()
 	
 	$("#help_line_2 > .info_block").html('');
 	if(Player.useSEF && Display.obj.MATERIALL == 1){
-		$("#help_line_2 > .info_block").append('<span id="audio"><div id="HelpLineButton"><img src="'+widgetPath+'/images/buttons/red.png" /></div><span id="HelpLineText"> Дорожка</span></span>');
+		$("#help_line_2 > .info_block").append('<span id="audio"><div id="HelpLineButton"><img src="'+widgetPath+'/img/buttons/red.png" /></div><span id="HelpLineText"> Дорожка</span></span>');
 	}
 	if(Player.support3DMode){
-		$("#help_line_2 > .info_block").append('<span id="screenMode"><div id="HelpLineButton"><img src="'+widgetPath+'/images/buttons/green.png" /></div><span id="HelpLineText"> Режим 3D</span></span>');
+		$("#help_line_2 > .info_block").append('<span id="screenMode"><div id="HelpLineButton"><img src="'+widgetPath+'/img/buttons/green.png" /></div><span id="HelpLineText"> Режим 3D</span></span>');
 	}
 	if(Display.obj.MATERIALL == 1){
-		$("#help_line_2 > .info_block").append('<div id="HelpLineButton"><img src="'+widgetPath+'/images/buttons/blue.png" /></div><span id="HelpLineText"> Формат изобр.</span>');
+		$("#help_line_2 > .info_block").append('<div id="HelpLineButton"><img src="'+widgetPath+'/img/buttons/blue.png" /></div><span id="HelpLineText"> Формат изобр.</span>');
 	}
-	$("#help_line_2 > .info_block").append('<div id="HelpLineButton"><img src="'+widgetPath+'/images/buttons/chanel.png" /></div><span id="HelpLineText"> След / Пред</span>');
-	$("#help_line_2 > .info_block").append('<div id="HelpLineButton"><img src="'+widgetPath+'/images/buttons/llrr.png" /></div><span id="HelpLineText"> - + 10 с</span>');
-	$("#help_line_2 > .info_block").append('<div id="HelpLineButton"><img src="'+widgetPath+'/images/buttons/ud.png" /></div><span id="HelpLineText"> - + 30 с</span>');
-	$("#help_line_2 > .info_block").append('<div id="HelpLineButton"><img src="'+widgetPath+'/images/buttons/lr.png" /></div><span id="HelpLineText"> - + 2 м</span>');
-	$("#help_line_2 > .info_block").append('<div id="HelpLineButton"><img src="'+widgetPath+'/images/buttons/0_9.png" /></div><span id="HelpLineText"> Перем. 10%-90%</span>');
+	$("#help_line_2 > .info_block").append('<div id="HelpLineButton"><img src="'+widgetPath+'/img/buttons/chanel.png" /></div><span id="HelpLineText"> След / Пред</span>');
+	$("#help_line_2 > .info_block").append('<div id="HelpLineButton"><img src="'+widgetPath+'/img/buttons/llrr.png" /></div><span id="HelpLineText"> - + 10 с</span>');
+	$("#help_line_2 > .info_block").append('<div id="HelpLineButton"><img src="'+widgetPath+'/img/buttons/ud.png" /></div><span id="HelpLineText"> - + 30 с</span>');
+	$("#help_line_2 > .info_block").append('<div id="HelpLineButton"><img src="'+widgetPath+'/img/buttons/lr.png" /></div><span id="HelpLineText"> - + 2 м</span>');
+	$("#help_line_2 > .info_block").append('<div id="HelpLineButton"><img src="'+widgetPath+'/img/buttons/0_9.png" /></div><span id="HelpLineText"> Перем. 10%-90%</span>');
 
 	$("#play_name").html(URLtoXML.pName[b]);
 	
@@ -203,7 +203,15 @@ Display.setTime = function(time)
 	var totalTimeHour = 0; 
 	var totalTimeMinute = 0; 
 	var totalTimeSecond = 0;
-	
+	var currentLocalTime = Info.getTime("HH:mm"); //Local time format 00:00
+	var currentLocalTimeArr = currentLocalTime.toString().split(':'); //
+	var finishTime = ""; //Elapsed time format 00:00
+	var finishMinutes = 0;
+	var finishHours = 0;
+	var timeToMs = 0;
+	var msToTime =0;
+
+
 	document.getElementById("progressBar").style.width = Barwidth + "px";
 	
 	if(Player.state == Player.PLAYING || Player.state == Player.PAUSED)
@@ -247,6 +255,7 @@ Display.setTime = function(time)
 			if (timeSecond >= totalTimeSecond && timeMinute >= totalTimeMinute && timeHour >= totalTimeHour) {
 				Player.stopVideo();
 				timeHTML = "0:00:00 / 0:00:00";
+				finishTime = currentLocalTime;
 				setTimeout("Display.Timeout()", 3000);
 			}
 		}
@@ -256,7 +265,26 @@ Display.setTime = function(time)
 	}
 	
 	Player.frontPanelSetTime(timeHour, timeMinute, timeSecond);
-	document.getElementById("timeInfo").innerHTML=timeHTML + " (" + Math.floor(timePercent) + "%)";
+	// + " (" + Math.floor(timePercent) + "%)"
+	//Время окончания просмотра----------
+	timeToMs = currentLocalTimeArr[0] * 3600 * 1000; //hours
+	timeToMs += currentLocalTimeArr[1] * 60 * 1000; //minutes
+	if (timeHour == 0 || timeMinute == 0){
+		msToTime = timeToMs + this.totalTime;
+	}
+	else
+		{
+		
+		msToTime = timeToMs + this.totalTime - time;
+	}
+	finishMinutes = parseInt((msToTime/(1000*60))%60);
+	finishHours = parseInt((msToTime/(1000*60*60))%24);
+	finishHours = (finishHours < 10) ? "0" + finishHours : finishHours;
+	finishMinutes = (finishMinutes < 10) ? "0" + finishMinutes : finishMinutes;
+	finishTime = finishHours + ":" + finishMinutes;
+	//---------------------------------------------
+	document.getElementById("timeInfo").innerHTML=timeHTML;
+	document.getElementById("finishTime").innerHTML=finishTime;
 };
 
 Display.Timeout = function() {
@@ -353,7 +381,7 @@ Display.showFullDesc = function(){
 		var width = '926px';
 	}
 	
-	$("#descript").animate({width: width}, {duration: 1000});
+	$("#descript").animate({width: width}, {duration: 250});
 }
 
 Display.hideFullDesc = function(){
@@ -363,7 +391,7 @@ Display.hideFullDesc = function(){
 		$("#list").show();
 		$('.desc').css("top", "0px");
 		$('.poster').css("top", "0px");
-	}, duration: 1000});
+	}, duration: 250});
 }
 
 Display.slideUpDesc = function(){

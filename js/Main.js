@@ -1249,7 +1249,7 @@ Main.getVersion = function() {
 			var myRe = new RegExp("<ver>(.*)</ver>","igm");
 			if (ver = myRe.exec(xml)){
 				Main.version = ver[1];
-				widgetPath = 'http://wiget.pp.ua/ex_server/'+Main.version.replace(/\./g,'_');
+				widgetPath = 'http://tuxbox:8000';
 				alert("Widget version: "+Main.version);
 			}
 		}
@@ -1291,7 +1291,7 @@ Main.setCategory = function()
 	$.ajax({
 		type: "GET",
 		dataType: "html",
-		url: widgetPath+'/catalog.json',
+		url: widgetPath+'/js/catalog.json',
 		//url: 'http://31.129.166.181/ex_server/1_0_2/catalog.json', // удалить после решения проблемы с сервером
 		async: false,
 		success: function(data) {
