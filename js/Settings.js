@@ -79,7 +79,6 @@ showHandler = function() {
 };
 
 Settings.onLoad = function() {
-	
 	widgetAPI.sendReadyEvent();// Сообщаем менеджеру приложений о готовности
 	window.onShow =  showHandler; // Стандартный индикатор Volume-OSD
 	
@@ -319,19 +318,27 @@ Settings.load = function() {
 };
 
 // Получаем версию виджета из config.xml
-Settings.getVersion = function() {
+Settings.getVersion = function() 
+{
 	$.ajax({
 		type: "GET",
-		url: "config.xml",
 		dataType: "html",
+		url: 'http://tuxbox:8000/js/version.json',
 		async: false,
-		success: function(xml) {
-			var myRe = new RegExp("<ver>(.*)</ver>","igm");
-			if (ver = myRe.exec(xml)){
-				Settings.version = ver[1];
-				widgetPath = 'http://tuxbox:8000';
-				alert("Widget version: "+Settings.version);
+		success: function(data) {
+			try {
+			data = JSON.parse(data);
+			Settings.version = data.stage;
+			widgetPath = 'http://tuxbox:8000';
+			alert("Settings vidget version: " + Settings.version);
+				
+			} catch (e){
+				alert("Get version error "+e);
 			}
+		},
+		error: function(xhr, ajaxOptions, thrownError) { 
+			alert("AJAX Error get version.json! "+thrownError);
 		}
 	});
+	
 }

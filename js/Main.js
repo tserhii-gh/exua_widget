@@ -1242,16 +1242,23 @@ Main.changeCategory = function(catID)
 Main.getVersion = function() {
 	$.ajax({
 		type: "GET",
-		url: "config.xml",
 		dataType: "html",
+		url: 'http://tuxbox:8000/js/version.json',
 		async: false,
-		success: function(xml) {
-			var myRe = new RegExp("<ver>(.*)</ver>","igm");
-			if (ver = myRe.exec(xml)){
-				Main.version = ver[1];
-				widgetPath = 'http://tuxbox:8000';
-				alert("Widget version: "+Main.version);
+		success: function(data) {
+			try {
+			data = JSON.parse(data);
+			Main.version = data.stage;
+			widgetPath = 'http://tuxbox:8000'; //local
+			alert("Widget version: " + Main.version);
+				//Main.setMenu();
+				
+			} catch (e){
+				alert("Get version error "+e);
 			}
+		},
+		error: function(xhr, ajaxOptions, thrownError) { 
+			alert("AJAX Error get version.json! "+thrownError); //add github.io
 		}
 	});
 }
